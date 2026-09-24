@@ -105,4 +105,4 @@ kept locally in the browser via `chrome.storage.local`.
 
 ## License
 
-MIT (or your choice). Add a `LICENSE` file before publishing.
+MIT © 2026 dwanjala.com
