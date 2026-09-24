@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font: 13px system-ui, sans-serif; width: 300px; padding: 12px; }
+    label { display: block; margin: 10px 0 4px; font-weight: 600; }
+    input, select, button { width: 100%; box-sizing: border-box; padding: 6px; }
+    button { margin-top: 14px; padding: 8px; cursor: pointer; font-weight: 600; }
+    .hint { color: #666; font-size: 11px; margin-top: 3px; }
+    #status { margin-top: 10px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <label for="seconds">Interval (seconds)</label>
+  <input id="seconds" type="number" min="30" step="1" value="60">
+  <div class="hint">Minimum 30 seconds.</div>
+
+  <label for="window">Window</label>
+  <select id="window"></select>
+  <div class="hint">"Currently focused" follows whichever window you used last.</div>
+
+  <button id="toggle">Start</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
